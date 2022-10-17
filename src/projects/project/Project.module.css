@@ -1,0 +1,20 @@
+.project {
+    width: 300px;
+    background-color: #fd59a4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    height: 200px;
+    width: 100%;
+    background-color: dodgerblue;
+
+}
+
+.button {
+    margin-top: 100px;
+}
+
