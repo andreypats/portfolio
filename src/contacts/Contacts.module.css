@@ -1,5 +1,5 @@
 .contactsBlock {
-    height: 100vh;
+    height: 40vh;
     background-color: #f6566f;
 }
 
@@ -15,7 +15,7 @@
 
 .form {
     border: 1px solid;
-    width: 40%;
+    width: 260px;
     height: 150px;
     display: flex;
     flex-direction: column;
