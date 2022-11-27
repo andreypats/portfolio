@@ -1,17 +1,25 @@
 .project {
     width: 300px;
-    background-color: #fd59a4;
+    /*background-color: #fd59a4;*/
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    /*align-items: center;*/
+    /*text-align: center;*/
+}
 
+.projectTitle {
+    font-family: 'Saira', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 700;
 }
 
 .image {
     height: 200px;
     width: 100%;
-    background-color: dodgerblue;
+    background-color: #aaa;
 }
 
 .button {
@@ -19,6 +27,12 @@
 }
 
 .description {
-    padding: 0 20px 20px 20px;
+    /*padding: 0 20px 20px 20px;*/
+    font-family: 'Nunito', sans-serif;
+    color: #aaa;
+    font-size: 18px;
+    /*font-weight: 400;*/
+    /*line-height: 30px;*/
+    line-height: 1.8em;
 }
 
