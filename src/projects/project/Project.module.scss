@@ -1,5 +1,5 @@
 .project {
-    width: 300px;
+    width: 350px;
     /*background-color: #fd59a4;*/
     display: flex;
     flex-direction: column;
@@ -20,10 +20,29 @@
     height: 200px;
     width: 100%;
     background-color: #aaa;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/*псевдоэлемент*/
+.image::before {
+    position: absolute;
+    content: '';
+    background-color: #aaa;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 40%;
 }
 
 .button {
-    margin-top: 100px;
+    position: relative;
+    margin-top: 95px;
+    margin-left: 40%;
+    background-color: #fff;
+    font-family: 'Saira', sans-serif;
 }
 
 .description {
