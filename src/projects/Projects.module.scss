@@ -1,7 +1,9 @@
+@import '../common/styles/sass/variables';
+
 .projectsBlock {
   border: 1px solid white;
   min-height: 100vh;
-  background-color: #212529;
+  background-color: $bgColor;
 
   .projectsContainer {
     align-items: center;

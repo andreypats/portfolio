@@ -1,0 +1,13 @@
+@import '../common/styles/sass/variables.scss';
+
+.remoteBlock {
+  border: 1px solid white;
+  height: 30vh;
+  background-color: $bgColor;
+
+  .remoteContainer {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+

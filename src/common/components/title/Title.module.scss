@@ -1,0 +1,47 @@
+@import '../../styles/sass/variables';
+
+.title {
+  margin-bottom: 15px;
+  margin-top: 30px;
+
+  h2 {
+    font-family: 'Saira', sans-serif;
+    font-size: 34px;
+    /*line-height: 42px;*/
+    margin: 0;
+    color: $mainTextColor;
+    font-weight: 700;
+  }
+
+  .spaceBorder {
+    background: $primaryColor;
+    height: 1px;
+    margin: 10px auto 20px;
+    position: relative;
+    width: 30px;
+
+    /*псевдоэлемент*/
+    &::before {
+      background: hsla(0, 0%, 100%, .25);
+      content: "";
+      height: 1px;
+      position: absolute;
+      width: 30px;
+      left: -40px;
+    }
+
+    &::after {
+      background: hsla(0, 0%, 100%, .25);
+      content: "";
+      height: 1px;
+      position: absolute;
+      width: 30px;
+      right: -40px;
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,11 @@
+@import "../../../common/styles/sass/variables";
+
+.button {
+  font-family: $textFontFamily;
+  color: $mainTextColor;
+  font-size: 14px;
+  font-weight: 700;
+  background: $primaryColor;
+  border: none;
+  padding: 4px 40px;
+}
