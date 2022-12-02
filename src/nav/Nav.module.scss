@@ -1,0 +1,17 @@
+@import '../common/styles/sass/variables.scss';
+@import "../common/styles/sass/mixins";
+
+.nav {
+  width: 300px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  & a:active,
+  & a:hover,
+  & a {
+    @include text($titleFontFamily, 14px, $mainTextColor);
+    font-weight: 600;
+  }
+}
+

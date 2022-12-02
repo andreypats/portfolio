@@ -1,0 +1,45 @@
+@import "./../common/styles/sass/variables";
+@import "./../common/styles/sass/mixins";
+
+.mainPage {
+  border: 1px solid white;
+  min-height: 100vh; /*vh - видимая высота экрана*/
+  background-color: $bgColor;
+
+  .mainBlock {
+    padding-top: 10vh;
+
+    @media screen and (max-width: 880px) {
+      padding-top: 0;
+    }
+
+    .text {
+      width: 400px;
+
+      .name {
+        @include text ($titleFontFamily, 20px, $primaryColor);
+        font-weight: 700;
+        text-shadow: 3px 3px 0 black;
+      }
+
+      .profession {
+        @include text ($titleFontFamily, 20px, $mainTextColor);
+        font-weight: 700;
+        font-size: 30px;
+        text-shadow: 5px 5px 0 black;
+      }
+    }
+
+    .photo {
+      width: 300px;
+      height: 500px;
+      background-position: top;
+      box-shadow: 10px 10px 5px 0 black;
+    }
+  }
+
+
+}
+
+
+

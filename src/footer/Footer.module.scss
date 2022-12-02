@@ -1,0 +1,45 @@
+@import '../common/styles/sass/variables.scss';
+@import "../common/styles/sass/mixins";
+
+.footer {
+  min-height: 70px;
+  border: 1px solid white;
+  background-color: $bgColor;
+  font-family: $titleFontFamily;
+
+  .footerContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .body {
+      width: 350px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      .bodyElement a:active,
+      .bodyElement a:hover,
+      .bodyElement a {
+        @include text($textFontFamily, 14px, $secondTextColor);
+        font-weight: 400;
+      }
+
+      @media screen and (max-width: 420px) {
+        justify-content: space-around;
+      }
+    }
+
+    .copyrights {
+      @include text($textFontFamily, 16px, $secondTextColor);
+      font-weight: 400;
+
+      @media screen and (max-width: 420px) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
