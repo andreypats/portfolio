@@ -19,7 +19,7 @@
       .name {
         @include text ($titleFontFamily, 20px, $primaryColor);
         font-weight: 700;
-        text-shadow: 3px 3px 0 black;
+        //text-shadow: 3px 3px 0 black;
       }
 
       .profession {

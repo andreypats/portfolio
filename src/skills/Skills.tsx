@@ -3,7 +3,8 @@ import s from './Skills.module.scss'
 import styleContainer from '../../src/common/styles/Container.module.css'
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
-import JSImage from "../assets/image/javascript.svg";import CSSImage from "../assets/image/css.svg";
+import JSImage from "../assets/image/js.svg";
+import CSSImage from "../assets/image/css.svg";
 import ReactImage from "../assets/image/react.svg";
 
 export const Skills = () => {

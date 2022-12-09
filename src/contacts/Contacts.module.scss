@@ -2,7 +2,7 @@
 
 .contactsBlock {
   border: 1px solid white;
-  height: 50vh;
+  //min-height: 50vh;
   background-color: $bgColor;
 
   .contactsContainer {
@@ -11,7 +11,8 @@
     justify-content: flex-start;
 
     .form {
-      width: 300px;
+      max-width: 300px;
+      width: 100%;
       height: 150px;
       display: flex;
       flex-direction: column;
@@ -37,11 +38,5 @@
     .button {
       margin-top: 10px;
     }
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .form {
-    width: 100%;
   }
 }
