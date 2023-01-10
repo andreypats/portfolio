@@ -21,13 +21,14 @@ export const Main = () => {
                             options={{
                                 autoStart: true,
                                 loop: true,
+                                delay: 50,
                             }}
                             onInit={(typewriter) => {
                                 typewriter
                                     .typeString('A FRONTEND  DEVELOPER')
                                     .pauseFor(1000)
                                     .deleteAll()
-                                    .pauseFor(1500)
+                                    .pauseFor(1000)
                                     .start();
                             }}
                         />
