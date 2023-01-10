@@ -1,9 +1,11 @@
+@import "src/common/styles/sass/mixins";
+
 .skillsBlock {
     border: 1px solid white;
 }
 
 .skillsContainer {
-    align-items: center;
+    @include container;
     flex-direction: column;
     justify-content: flex-start;
 }

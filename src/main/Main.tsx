@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Main.module.scss'
-import styleContainer from '../../src/common/styles/Container.module.css'
 import myPhoto from '../assets/image/IAm.jpg'
+import Typewriter from 'typewriter-effect';
 
 export const Main = () => {
     const mainPhoto = {
@@ -10,10 +10,28 @@ export const Main = () => {
 
     return (
         <div className={s.mainPage}>
-            <div className={`${styleContainer.container} ${s.mainBlock}`}>
+            <div className={s.mainBlock}>
                 <div className={s.text}>
-                    <h6 className={s.name}>I Am Andrey Pats</h6>
-                    <div className={s.profession}>A FRONTEND DEVELOPER</div>
+                    <h6 className={s.name}>
+                        <span className={s.name_1}>I Am  </span>
+                        <span>ANDREY PATS</span>
+                       </h6>
+                    <div className={s.profession}>
+                        <Typewriter
+                            options={{
+                                autoStart: true,
+                                loop: true,
+                            }}
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString('A FRONTEND  DEVELOPER')
+                                    .pauseFor(1000)
+                                    .deleteAll()
+                                    .pauseFor(1500)
+                                    .start();
+                            }}
+                        />
+                    </div>
                 </div>
                 <div className={s.photo} style={mainPhoto}></div>
             </div>

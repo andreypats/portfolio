@@ -1,10 +1,12 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .projectsBlock {
   border: 1px solid white;
   background-color: $bgColor;
 
   .projectsContainer {
+    @include container;
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;

@@ -7,6 +7,7 @@
   background-color: $bgColor;
 
   .mainBlock {
+    @include container;
     padding-top: 10vh;
 
     @media screen and (max-width: 880px) {
@@ -19,14 +20,18 @@
       .name {
         @include text ($titleFontFamily, 20px, $primaryColor);
         font-weight: 700;
+        margin-bottom: 5px;
         //text-shadow: 3px 3px 0 black;
+
+        .name_1 {
+          color: #fff;
+        }
       }
 
       .profession {
-        @include text ($titleFontFamily, 20px, $mainTextColor);
+        @include text ($titleFontFamily, 30px, $mainTextColor);
         font-weight: 700;
-        font-size: 30px;
-        text-shadow: 5px 5px 0 black;
+        //text-shadow: 5px 5px 0 black;
       }
     }
 

@@ -1,4 +1,5 @@
-@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .remoteBlock {
   border: 1px solid white;
@@ -6,7 +7,7 @@
   background-color: $bgColor;
 
   .remoteContainer {
-    align-items: center;
+    @include container;
     flex-direction: column;
     text-align: center;
   }

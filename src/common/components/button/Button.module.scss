@@ -8,4 +8,10 @@
   background: $primaryColor;
   border: none;
   padding: 4px 40px;
+  &:hover {
+    background: #b42b2b;
+  }
+  &:active {
+    padding: 3px 38px;
+  }
 }
