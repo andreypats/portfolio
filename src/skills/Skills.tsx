@@ -5,6 +5,7 @@ import {Title} from "../common/components/title/Title";
 import JSImage from "../assets/image/js.svg";
 import CSSImage from "../assets/image/css.svg";
 import ReactImage from "../assets/image/react.svg";
+import {Fade} from "react-awesome-reveal";
 
 export const Skills = () => {
     const js = {
@@ -20,15 +21,17 @@ export const Skills = () => {
     };
 
     return (
-        <div className={s.skillsBlock}>
-            <div className={s.skillsContainer}>
-                <Title title={'Skills'}/>
-                <div className={s.skills}>
-                    <Skill style={js} title={'JS'} description={'Detailed description of the JS project'}/>
-                    <Skill style={css} title={'CSS'} description={'Detailed description of the CSS project'}/>
-                    <Skill style={react} title={'React'} description={'Detailed description of the React project'}/>
+        <div id={'skills'} className={s.skillsBlock}>
+            <Fade duration={2000}>
+                <div className={s.skillsContainer}>
+                    <Title title={'Skills'}/>
+                    <div className={s.skills}>
+                        <Skill style={js} title={'JS'} description={'Detailed description of the JS project'}/>
+                        <Skill style={css} title={'CSS'} description={'Detailed description of the CSS project'}/>
+                        <Skill style={react} title={'React'} description={'Detailed description of the React project'}/>
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     );
 };

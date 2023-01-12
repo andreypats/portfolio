@@ -13,6 +13,8 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    filter: grayscale(80%) blur(1px);
+
 
     /*псевдоэлемент*/
     &::before {
@@ -26,12 +28,16 @@
       opacity: 40%;
     }
 
-    .button {
-      position: relative;
-      margin-top: 95px;
-      margin-left: 35%;
-      font-family: $titleFontFamily;
-    }
+    //.button {
+    //  position: relative;
+    //  margin-top: 95px;
+    //  margin-left: 35%;
+    //  font-family: $titleFontFamily;
+    //}
+  }
+
+  .image:hover {
+    filter: grayscale(0%) blur(0px) saturate(150%);
   }
 
   .projectTitle {

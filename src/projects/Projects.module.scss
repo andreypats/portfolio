@@ -2,6 +2,7 @@
 @import '../common/styles/sass/mixins';
 
 .projectsBlock {
+  min-height: 100vh;
   border: 1px solid white;
   background-color: $bgColor;
 
