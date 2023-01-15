@@ -6,11 +6,12 @@ import {Slide} from "react-awesome-reveal";
 
 export const Main = () => {
     const mainPhoto = {
-        backgroundImage: 'url(' + myPhoto + ')',
+        backgroundImage: 'url(' + myPhoto + ')'
     };
 
     return (
         <div id={'main'} className={s.mainPage}>
+            <div className={s.photo} style={mainPhoto}></div>
             <div className={s.mainBlock}>
                 <div className={s.text}>
                     <Slide direction={'down'}>
@@ -37,7 +38,7 @@ export const Main = () => {
                         />
                     </div>
                 </div>
-                <div className={s.photo} style={mainPhoto}></div>
+
             </div>
         </div>
     );

@@ -5,23 +5,29 @@
   border: 1px solid white;
   min-height: 100vh; /*vh - видимая высота экрана*/
   background-color: $bgColor;
+  position: relative;
+
+  .photo {
+    position: absolute;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    opacity: 0.5;
+  }
 
   .mainBlock {
-    @include container;
-    padding-top: 10vh;
-
-    @media screen and (max-width: 880px) {
-      padding-top: 0;
-    }
+    //@include container;
 
     .text {
-      width: 400px;
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
 
       .name {
         @include text ($titleFontFamily, 20px, $primaryColor);
         font-weight: 700;
         margin-bottom: 5px;
-        //text-shadow: 3px 3px 0 black;
 
         .name_1 {
           color: #fff;
@@ -31,16 +37,10 @@
       .profession {
         @include text ($titleFontFamily, 30px, $mainTextColor);
         font-weight: 700;
-        //text-shadow: 5px 5px 0 black;
       }
     }
 
-    .photo {
-      width: 300px;
-      height: 500px;
-      background-position: top;
-      box-shadow: 10px 10px 5px 0 black;
-    }
+
   }
 
 
