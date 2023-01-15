@@ -7,9 +7,9 @@
   display: flex;
   justify-content: space-between;
 
-  & a:active,
-  & a:hover,
-  & a {
+  &:active,
+  &:hover,
+  & {
     @include text($titleFontFamily, 14px, $mainTextColor);
     font-weight: 600;
   }
