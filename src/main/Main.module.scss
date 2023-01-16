@@ -2,17 +2,19 @@
 @import "./../common/styles/sass/mixins";
 
 .mainPage {
-  border: 1px solid white;
   min-height: 100vh; /*vh - видимая высота экрана*/
   background-color: $bgColor;
   position: relative;
 
   .photo {
     position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
     right: 0;
-    width: 400px;
+    width: 350px;
     height: 100%;
     opacity: 0.5;
+    filter: grayscale(100%) brightness(100%) contrast(120%);
   }
 
   .mainBlock {
@@ -20,7 +22,7 @@
 
     .text {
       position: absolute;
-      left: 10%;
+      left: 15%;
       top: 50%;
       transform: translateY(-50%);
 
@@ -30,21 +32,32 @@
         margin-bottom: 5px;
 
         .name_1 {
-          color: #fff;
+          color: $mainTextColor;
         }
       }
 
       .profession {
-        @include text ($titleFontFamily, 30px, $mainTextColor);
+        @include text ($titleFontFamily, 50px, $mainTextColor);
         font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .locate {
+        border-left: 1px solid hsla(0,0%,100%,.25);
+        margin-right: 10px;
+
+        .country {
+          @include text ($titleFontFamily, 16px, $mainTextColor);
+          font-weight: 700;
+          margin-left: 10px;
+        }
+
+        .city {
+          @include text (none, 14px, $secondTextColor);
+          margin-left: 10px;
+          margin-top: 10px;
+        }
       }
     }
-
-
   }
-
-
 }
-
-
-

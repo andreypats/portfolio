@@ -13,7 +13,7 @@ export const NavLinkStyles = (props: PropsType) => {
             to={props.to}
             spy={true}
             smooth={true}
-            offset={-90}
+            offset={-80}
             duration={500}
         >{props.linkName}</Link>
     );

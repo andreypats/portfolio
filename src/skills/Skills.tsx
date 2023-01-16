@@ -5,6 +5,7 @@ import {Title} from "../common/components/title/Title";
 import JSImage from "../assets/image/js.svg";
 import CSSImage from "../assets/image/css.svg";
 import ReactImage from "../assets/image/react.svg";
+import SkillsImage from "../assets/image/skills.png";
 import {Fade} from "react-awesome-reveal";
 
 export const Skills = () => {
@@ -20,8 +21,13 @@ export const Skills = () => {
         backgroundImage: 'url(' + ReactImage + ')',
     };
 
+    const skillsPhoto = {
+        backgroundImage: 'url(' + SkillsImage + ')',
+    };
+
     return (
         <div id={'skills'} className={s.skillsBlock}>
+            <div className={s.photo} style={skillsPhoto}></div>
             <Fade duration={2000}>
                 <div className={s.skillsContainer}>
                     <Title title={'Skills'}/>

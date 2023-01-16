@@ -5,6 +5,17 @@
   border: 1px solid white;
   background-color: $bgColor;
 
+  .photo {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    width: 1000px;
+    height: 100%;
+    opacity: 0.2;
+    filter: grayscale(100%) brightness(20%);
+  }
+
   .skillsContainer {
     @include container;
     flex-direction: column;

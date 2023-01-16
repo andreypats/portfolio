@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Main.module.scss'
-import myPhoto from '../assets/image/IAm.jpg'
+import myPhoto from '../assets/image/Main_photo.png'
 import Typewriter from 'typewriter-effect';
 import {Slide} from "react-awesome-reveal";
 
@@ -36,6 +36,10 @@ export const Main = () => {
                                     .start();
                             }}
                         />
+                    </div>
+                    <div className={s.locate}>
+                        <div className={s.country}>Belarus</div>
+                        <div className={s.city}>Mogilev</div>
                     </div>
                 </div>
 
