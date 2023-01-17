@@ -1,5 +1,5 @@
-import React from 'react';
-import s from './Skills.module.scss'
+import React from "react";
+import s from "./Skills.module.scss"
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
 import JSImage from "../assets/image/js.svg";
@@ -9,21 +9,10 @@ import SkillsImage from "../assets/image/skills.png";
 import {Fade} from "react-awesome-reveal";
 
 export const Skills = () => {
-    const js = {
-        backgroundImage: 'url(' + JSImage + ')',
-    };
-
-    const css = {
-        backgroundImage: 'url(' + CSSImage + ')',
-    };
-
-    const react = {
-        backgroundImage: 'url(' + ReactImage + ')',
-    };
-
-    const skillsPhoto = {
-        backgroundImage: 'url(' + SkillsImage + ')',
-    };
+    const js = {backgroundImage: 'url(' + JSImage + ')'};
+    const css = {backgroundImage: 'url(' + CSSImage + ')'};
+    const react = {backgroundImage: 'url(' + ReactImage + ')'};
+    const skillsPhoto = {backgroundImage: 'url(' + SkillsImage + ')'};
 
     return (
         <div id={'skills'} className={s.skillsBlock}>

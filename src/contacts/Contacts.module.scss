@@ -2,9 +2,14 @@
 @import "../common/styles/sass/mixins";
 
 .contactsBlock {
-  border: 1px solid white;
   min-height: 100vh;
   background-color: $bgColor;
+  position: relative;
+
+  .photo {
+    @include photo(cover, 100%, 0.2);
+    filter: grayscale(100%) brightness(20%);
+  }
 
   .contactsContainer {
     @include container;
@@ -13,9 +18,6 @@
     justify-content: flex-start;
 
     .form {
-      max-width: 300px;
-      width: 100%;
-      height: 150px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -23,22 +25,22 @@
       flex-wrap: wrap;
 
       input {
-        width: 95%;
+        width: 400px;
         background: none;
         border: 1px solid hsla(0,0%,100%,.2);
       }
 
       textarea {
-        width: 95%;
+        width: 400px;
         height: 80px;
         background: none;
         border: 1px solid hsla(0,0%,100%,.2);
         font-family: $titleFontFamily;
       }
-    }
 
-    .button {
-      margin-top: 10px;
+      .btn {
+        margin-top: 10px;
+      }
     }
   }
 }

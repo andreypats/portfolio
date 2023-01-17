@@ -2,17 +2,12 @@
 
 .skillsBlock {
   min-height: 100vh;
-  border: 1px solid white;
   background-color: $bgColor;
+  position: relative;
 
   .photo {
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include photo(contain, 100%, 0.1);
     left: 0;
-    width: 1000px;
-    height: 100%;
-    opacity: 0.2;
     filter: grayscale(100%) brightness(20%);
   }
 

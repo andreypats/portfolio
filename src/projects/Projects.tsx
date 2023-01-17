@@ -7,13 +7,9 @@ import socialImage from './../assets/image/social_media.jpg'
 import {Fade} from "react-awesome-reveal";
 
 export const Projects = () => {
-    const social = {
-        backgroundImage: 'url(' + socialImage + ')',
-    };
+    const social = {backgroundImage: 'url(' + socialImage + ')'};
 
-    const todo = {
-        backgroundImage: 'url(' + todoImage + ')',
-    };
+    const todo = {backgroundImage: 'url(' + todoImage + ')'};
 
     const descriptionSocial = 'Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur consequat...'
 

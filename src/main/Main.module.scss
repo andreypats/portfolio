@@ -7,14 +7,9 @@
   position: relative;
 
   .photo {
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include photo(contain, 370px, 0.5);
     right: 0;
-    width: 350px;
-    height: 100%;
-    opacity: 0.5;
-    filter: grayscale(100%) brightness(100%) contrast(120%);
+    filter: grayscale(100%) contrast(120%);
   }
 
   .mainBlock {
@@ -22,7 +17,7 @@
 
     .text {
       position: absolute;
-      left: 15%;
+      left: 10%;
       top: 50%;
       transform: translateY(-50%);
 

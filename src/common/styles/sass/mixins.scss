@@ -15,3 +15,12 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+@mixin photo($background-size, $width, $opacity) {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: $background-size;
+  width: $width;
+  height: 100%;
+  opacity: $opacity;
+}
