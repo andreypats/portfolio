@@ -28,10 +28,11 @@ export const Contacts = () => {
                     <Fade  duration={2000}>
                         <textarea name="text" placeholder={"Your Message"}></textarea>
                     </Fade>
-                    <div className={s.btn}>
-                        <Button title={'Send'}/>
-                    </div>
+
                 </form>
+                <div className={s.btn}>
+                    <Button title={'Send'}/>
+                </div>
             </div>
             <Remote />
         </div>

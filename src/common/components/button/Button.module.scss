@@ -8,10 +8,12 @@
   background: $primaryColor;
   border: none;
   padding: 4px 40px;
-  //&:hover {
-  //  background: #b42b2b;
-  //}
-  //&:active {
-  //  padding: 3px 38px;
-  //}
+
+  &:hover:after {
+    background: #5afc05;
+  }
+
+  &:active:after {
+    padding: 3px 38px;
+  }
 }
