@@ -3,12 +3,12 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
-const app = express()
-const port = 5000
+const app = express();
+const port = 5000;
 
-app.use(cors())
-app.use(bodyParser.urlencoded({extended: false}))
-app.use(bodyParser.json())
+app.use(cors());
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
@@ -46,6 +46,6 @@ app.post('/sendMessage', async (req, res) => {
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
-})
+});
 
 //node src/api/app.js
