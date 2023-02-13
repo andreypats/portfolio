@@ -7,7 +7,7 @@
 
   .photo {
     @include photo(contain, 100%, 0.1);
-    left: 0;
+    background-position: right;
     filter: grayscale(100%) brightness(20%);
   }
 
