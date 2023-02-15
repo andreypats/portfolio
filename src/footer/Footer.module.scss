@@ -3,6 +3,7 @@
 
 .footer {
   min-height: 70px;
+  border-top: 1px solid $secondTextColor;
   background-color: $bgColor;
   font-family: $titleFontFamily;
 
@@ -28,6 +29,10 @@
       @media screen and (max-width: 420px) {
         justify-content: space-around;
       }
+    }
+
+    span {
+      color: $primaryColor;
     }
 
     .copyrights {

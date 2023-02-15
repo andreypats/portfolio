@@ -17,7 +17,7 @@ export const Footer = () => {
                         <a href="https://ru.linkedin.com/">Linkedln</a>
                     </div>
                 </div>
-                <div className={s.copyrights}>&copy; 2022 All rights reserved - Andrey Pats</div>
+                <div className={s.copyrights}>&copy; 2022 All rights reserved - <span>Andrey Pats</span></div>
             </div>
         </div>
     );

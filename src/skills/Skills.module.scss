@@ -6,6 +6,7 @@
   position: relative;
 
   .photo {
+    background-image: url(../assets/image/skills.png);
     @include photo(contain, 100%, 0.1);
     background-position: right;
     filter: grayscale(100%) brightness(20%);

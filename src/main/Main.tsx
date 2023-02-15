@@ -1,16 +1,12 @@
 import React from 'react';
 import s from './Main.module.scss'
-import myPhoto from '../assets/image/main_photo.png'
 import Typewriter from 'typewriter-effect';
 import {Slide} from "react-awesome-reveal";
 
 export const Main = () => {
-
-    const mainPhoto = {backgroundImage: 'url(' + myPhoto + ')'};
-
     return (
         <div id={'main'} className={s.mainPage}>
-            <div className={s.photo} style={mainPhoto}></div>
+            <div className={s.photo}></div>
             <div className={s.mainBlock}>
                 <div className={s.text}>
                     <Slide direction={'down'}>
