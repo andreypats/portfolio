@@ -7,9 +7,9 @@
 
   .photo {
     background-image: url(../assets/image/skills.png);
-    @include photo(contain, 100%, 0.1);
-    background-position: right;
+    @include photo(0.1);
     filter: grayscale(100%) brightness(20%);
+    transform: scale(0.7);
   }
 
   .skillsContainer {

@@ -5,15 +5,9 @@
   min-height: 100vh;
   background-color: $bgColor;
 
-  /*.photo {
-    @include photo(cover, 100%, 0.2);
-    filter: grayscale(100%) brightness(20%);
-  }*/
-
   .contactsContainer {
     @include container;
     flex-direction: column;
-    //justify-content: flex-start;
 
     .form {
       display: flex;

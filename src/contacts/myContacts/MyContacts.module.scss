@@ -1,0 +1,37 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.myContactsBlock {
+  border: 1px solid yellow;
+
+  .myContactsContainer {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    .contact {
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-around;
+
+      .contactTitle {
+        @include text ($titleFontFamily, 16px, $mainTextColor);
+        font-weight: 700;
+      }
+
+      .contactValue {
+        @include text (none, 18px, $secondTextColor);
+        font-weight: 400;
+        margin-top: 5px;
+      }
+    }
+
+    .link {
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+  }
+}
+

@@ -16,11 +16,11 @@
   flex-wrap: wrap;
 }
 
-@mixin photo($background-size, $width, $opacity) {
+@mixin photo($opacity) {
   position: absolute;
   background-repeat: no-repeat;
-  background-size: $background-size;
-  width: $width;
+  background-size: contain;
+  width: 100%;
   height: 100%;
   opacity: $opacity;
 }

@@ -6,7 +6,6 @@ import JSImage from "../assets/image/js.svg";
 import CSSImage from "../assets/image/css.svg";
 import ReactImage from "../assets/image/react.svg";
 import {Fade} from "react-awesome-reveal";
-
 export const Skills = () => {
     const js = {backgroundImage: 'url(' + JSImage + ')'};
     const css = {backgroundImage: 'url(' + CSSImage + ')'};

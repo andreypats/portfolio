@@ -8,7 +8,7 @@
 
   .photo {
     background-image: url(../assets/image/main_photo.png);
-    @include photo(contain, 100%, 0.5);
+    @include photo(0.5);
     background-position: right;
     filter: grayscale(100%) contrast(120%);
   }

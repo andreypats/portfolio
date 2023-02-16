@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Contacts.module.scss'
 import {Title} from '../common/components/title/Title';
 import {Fade, Slide} from "react-awesome-reveal";
-import {Remote} from "../remote/Remote";
+import {MyContacts} from "./myContacts/MyContacts";
 import {useFormik, FormikValues, FormikErrors} from 'formik';
 import axios from "axios";
 
@@ -110,7 +110,7 @@ export const Contacts = () => {
                     </div>
                 </form>
             </div>
-            <Remote />
+            <MyContacts />
         </div>
     );
 };
