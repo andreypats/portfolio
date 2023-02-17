@@ -2,8 +2,8 @@ import React from 'react';
 import s from './Projects.module.scss'
 import {Project} from "./project/Project";
 import {Title} from "../common/components/title/Title";
-import todoImage from './../assets/image/todo.jpg'
-import socialImage from './../assets/image/social_media.jpg'
+import todoImage from '../assets/image/todo.jpg'
+import socialImage from '../assets/image/social_media.jpg'
 import {Fade} from "react-awesome-reveal";
 
 export const Projects = () => {

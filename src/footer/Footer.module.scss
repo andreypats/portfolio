@@ -2,45 +2,23 @@
 @import "../common/styles/sass/mixins";
 
 .footer {
-  min-height: 70px;
-  border-top: 1px solid $secondTextColor;
+  height: 70px;
+  border-top: 1px solid white;
   background-color: $bgColor;
   font-family: $titleFontFamily;
 
   .footerContainer {
     @include container;
-    flex-direction: column;
-    justify-content: space-between;
-
-    .body {
-      max-width: 350px;
-      width: 100%;
-      margin-top: 10px;
-      display: flex;
-      justify-content: space-between;
-
-      .bodyElement a:active,
-      .bodyElement a:hover,
-      .bodyElement a {
-        @include text($textFontFamily, 14px, $secondTextColor);
-        font-weight: 400;
-      }
-
-      @media screen and (max-width: 420px) {
-        justify-content: space-around;
-      }
-    }
-
-    span {
-      color: $primaryColor;
-    }
+    text-align: center;
+    align-items: center;
 
     .copyrights {
       @include text($textFontFamily, 16px, $secondTextColor);
       font-weight: 400;
 
-      @media screen and (max-width: 420px) {
-        text-align: center;
+
+      span {
+        color: $primaryColor;
       }
     }
   }

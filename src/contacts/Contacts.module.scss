@@ -2,12 +2,13 @@
 @import "../common/styles/sass/mixins";
 
 .contactsBlock {
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: $bgColor;
 
   .contactsContainer {
     @include container;
     flex-direction: column;
+    text-align: center;
 
     .form {
       display: flex;
@@ -24,7 +25,7 @@
       input {
         width: 400px;
         @media screen and (max-width: 450px) {
-          width: 200px;
+          width: 250px;
         }
         background: none;
         color: $secondTextColor;
@@ -35,7 +36,7 @@
       textarea {
         width: 400px;
         @media screen and (max-width: 450px) {
-          width: 200px;
+          width: 250px;
         }
         height: 80px;
         background: none;

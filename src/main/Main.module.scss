@@ -10,11 +10,14 @@
     background-image: url(../assets/image/main_photo.png);
     @include photo(0.5);
     background-position: right;
-    filter: grayscale(100%) contrast(120%);
+    filter: grayscale(100%) contrast(120%) brightness(120%);
+
+    @media screen and (max-width: 750px) {
+      background-image: none;
+    }
   }
 
   .mainBlock {
-    //@include container;
 
     .text {
       position: absolute;
@@ -36,6 +39,18 @@
         @include text ($titleFontFamily, 50px, $mainTextColor);
         font-weight: 700;
         margin-bottom: 15px;
+
+        @media screen and (max-width: 750px) {
+          @include text ($titleFontFamily, 40px, $mainTextColor);
+
+          @media screen and (max-width: 580px) {
+            @include text ($titleFontFamily, 30px, $mainTextColor);
+
+            @media screen and (max-width: 450px) {
+              @include text ($titleFontFamily, 20px, $mainTextColor);
+            }
+          }
+        }
       }
 
       .locate {
