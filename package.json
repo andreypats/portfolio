@@ -4,7 +4,9 @@
   "private": true,
   "homepage": "https://andreypats.github.io/portfolio",
   "dependencies": {
-    "@emotion/react": "^11.10.5",
+    "@chakra-ui/react": "^2.5.1",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -19,6 +21,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "formik": "^2.2.9",
+    "framer-motion": "^9.0.4",
     "gh-pages": "^4.0.0",
     "node-sass": "^7.0.3",
     "nodemailer": "^6.9.1",
