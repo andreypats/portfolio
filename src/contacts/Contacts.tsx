@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Contacts.module.scss'
 import {Title} from '../common/components/title/Title';
-import {Fade, Slide} from "react-awesome-reveal";
+import {Slide, Zoom} from "react-awesome-reveal";
 import {MyContacts} from "./myContacts/MyContacts";
 import {useFormik, FormikValues, FormikErrors} from 'formik';
 import axios from "axios";
@@ -58,56 +58,52 @@ export const Contacts = () => {
             <div className={s.contactsContainer}>
                 <Title title={'Send message'}/>
                 <form className={s.form} onSubmit={formik.handleSubmit}>
-                    <Slide direction={'down'}>
+                    <Zoom delay={200}>
                         <input
                             id="name"
                             type="text"
                             placeholder="Your Name*"
                             {...formik.getFieldProps("name")}
                         />
-                    </Slide>
-                    {formik.touched.name && formik.errors.name
-                        ? <div className={s.error}>{formik.errors.name}</div>
-                        : null}
+                        {formik.touched.name && formik.errors.name
+                            ? <div className={s.error}>{formik.errors.name}</div>
+                            : null}
 
-                    <Slide direction={'left'}>
                         <input
                             id="email"
                             type="text"
                             placeholder="Your Email* - example@gmail.com"
                             {...formik.getFieldProps("email")}
                         />
-                    </Slide>
-                    {formik.touched.email && formik.errors.email
-                        ? <div className={s.error}>{formik.errors.email}</div>
-                        : null}
+                        {formik.touched.email && formik.errors.email
+                            ? <div className={s.error}>{formik.errors.email}</div>
+                            : null}
 
-                    <Slide direction={'right'}>
                         <input
                             id="phone"
                             type="text"
                             placeholder="Your Phone* - +375(29)123-45-67"
                             {...formik.getFieldProps("phone")}
                         />
-                    </Slide>
-                    {formik.touched.phone && formik.errors.phone
-                        ? <div className={s.error}>{formik.errors.phone}</div>
-                        : null}
+                        {formik.touched.phone && formik.errors.phone
+                            ? <div className={s.error}>{formik.errors.phone}</div>
+                            : null}
 
-                    <Fade  duration={3000}>
                         <textarea
                             id="message"
                             placeholder="Your Message*"
                             {...formik.getFieldProps("message")}
                         ></textarea>
-                    </Fade>
-                    {formik.touched.message && formik.errors.message
-                        ? <div className={s.error}>{formik.errors.message}</div>
-                        : null}
+                        {formik.touched.message && formik.errors.message
+                            ? <div className={s.error}>{formik.errors.message}</div>
+                            : null}
+                    </Zoom>
 
-                    <div>
-                        <button type="submit" className={s.btn}>Send</button>
-                    </div>
+                    <Slide direction={'up'}>
+                        <div>
+                            <button type="submit" className={s.btn}>Send</button>
+                        </div>
+                    </Slide>
                 </form>
             </div>
             <MyContacts />

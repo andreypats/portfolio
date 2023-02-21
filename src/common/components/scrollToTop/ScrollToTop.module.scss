@@ -1,0 +1,16 @@
+.topToBtm {
+  position: relative;
+
+  .iconBtn {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    width: 70px;
+    z-index: 50;
+  }
+
+  .iconBtn:hover {
+    width: 71px;
+  }
+}
+

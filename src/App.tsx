@@ -5,10 +5,12 @@ import {Skills} from "./skills/Skills";
 import {Projects} from "./projects/Projects";
 import {Contacts} from "./contacts/Contacts";
 import {Footer} from "./footer/Footer";
+import {ScrollToTop} from "./common/components/scrollToTop/ScrollToTop";
 
 function App() {
     return (
         <div className="App">
+            <ScrollToTop />
             <Header/>
             <Main/>
             <Skills />

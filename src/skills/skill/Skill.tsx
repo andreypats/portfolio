@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Skill.module.scss'
 import {CircularProgress, CircularProgressLabel} from "@chakra-ui/react";
-import { Rotate } from 'react-awesome-reveal';
+import { Zoom } from 'react-awesome-reveal';
 
 type SkillsType = {
     style: object
@@ -13,7 +13,7 @@ export const Skill = (props: SkillsType) => {
     return (
         <div className={s.skill}>
             <div className={s.skillTitle}>{props.title}</div>
-            <Rotate duration={1500}>
+            <Zoom>
                 <CircularProgress
                     value={+props.progress}
                     size='200px'
@@ -23,7 +23,7 @@ export const Skill = (props: SkillsType) => {
                 >
                     <CircularProgressLabel className={s.circularProgressLabel}>{props.progress}%</CircularProgressLabel>
                 </CircularProgress>
-            </Rotate>
+            </Zoom>
             <div className={s.icon} style={props.style}></div>
         </div>
     );
