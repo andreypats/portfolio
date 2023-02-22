@@ -4,6 +4,15 @@
 .contactsBlock {
   min-height: 90vh;
   background-color: $bgColor;
+  position: relative;
+
+  .photo {
+    background-image: url(../assets/image/letter.png);
+    @include photo(0.2);
+    filter: grayscale(100%) brightness(20%);
+    background-size: cover;
+    background-position: right;
+  }
 
   .contactsContainer {
     @include container;
@@ -15,6 +24,7 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      z-index: 1;
 
       .error {
         margin-top: -10px;
