@@ -3,6 +3,10 @@
   "name": "portfolio",
   "builds": [
     {
+      "src": "/(.*)",
+      "use": "@vercel/yarn start"
+    },
+    {
       "src": "src/api/app.js",
       "use": "@vercel/node"
     }
