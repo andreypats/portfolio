@@ -5,7 +5,8 @@ const bodyParser = require('body-parser');
 
 const app = express();
 // const port = 5000;
-const port = "https://portfolio-beta-eight-78.vercel.app/";
+const port = 443;
+// const port = "https://portfolio-beta-eight-78.vercel.app/";
 
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
