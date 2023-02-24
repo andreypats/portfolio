@@ -39,7 +39,7 @@ export const Contacts = () => {
         validate,
         onSubmit: async (values, {resetForm}) => {
             try {
-                await axios.post("https://portfolio-andreypats.vercel.app/sendMessage", {
+                await axios.post("https://andreypats.github.io/portfolio/sendMessage", {
                     name: values.name,
                     email: values.email,
                     phone: values.phone,

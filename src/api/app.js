@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const port = 5000;
-// const port = "https://portfolio-andreypats.vercel.app/";
 
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
