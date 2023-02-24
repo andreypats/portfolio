@@ -15,7 +15,7 @@ export const MyContacts = () => {
                     <Title title={'My contacts'}/>
                     <div className={s.contact}>
                         <div>
-                            <div className={s.contactTitle}>Adress</div>
+                            <div className={s.contactTitle}>Address</div>
                             <div className={s.contactValue}>Mogilev, Belarus</div>
                         </div>
                         <Zoom delay={200}>
