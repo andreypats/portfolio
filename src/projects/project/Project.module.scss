@@ -25,7 +25,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      opacity: 40%;
+      opacity: 0;
     }
 
     //.button {
@@ -37,7 +37,7 @@
   }
 
   .image:hover {
-    filter: grayscale(0%) blur(0px) saturate(150%);
+    filter: saturate(150%);
   }
 
   .projectTitle {
