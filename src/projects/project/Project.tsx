@@ -2,15 +2,22 @@ import React from 'react';
 import s from './Project.module.scss'
 
 type ProjectsType = {
+    id: string
     style: object
     title: string
     description: string
+    imageName: (name: string)=>void
 }
 
 export const Project = (props: ProjectsType) => {
-    return (
+
+    const onclickHandler = (e: React.MouseEvent<HTMLDivElement>) => {
+        props.imageName(e.currentTarget.id)
+    }
+
+   return (
         <div className={s.project}>
-            <div className={s.image} style={props.style}></div>
+            <div id={props.id} className={s.image} style={props.style} onClick={e=>onclickHandler(e)}></div>
             {/*<div className={s.image} style={props.style} onClick={()=>window.location.href='https://cards-nikskozlov.vercel.app/'}></div>*/}
             <h4 className={s.projectTitle}>{props.title}</h4>
             <span className={s.description}>{props.description}</span>

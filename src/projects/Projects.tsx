@@ -20,15 +20,28 @@ export const Projects = () => {
 
     const descriptionTodo = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tempora perferendis vero officia enim impedit voluptatem dignissimos, veniam ratione est alias rerum aperiam, nam aliquam reprehenderit iste dolor.'
 
+    const imageName = (name: string) => {
+        if (name === 'cards') {
+            // window.location.href='https://cards-nikskozlov.vercel.app/'
+            window.open('https://cards-nikskozlov.vercel.app/');
+        }
+        if (name === 'social') {
+            window.open('https://andreypats.github.io/portfolio/');
+        }
+        if (name === 'todo') {
+            window.open('https://andreypats.github.io/portfolio/');
+        }
+    }
+
     return (
         <div id={'projects'} className={s.projectsBlock}>
             <Fade  duration={2000}>
                 <div className={s.projectsContainer}>
                     <Title title={'Projects'}/>
                     <div className={s.projects}>
-                        <Project style={cards} title={'Learn cards'} description={descriptionCards}/>
-                        <Project style={social} title={'Social Network'} description={descriptionSocial}/>
-                        <Project style={todo} title={'Todolist'} description={descriptionTodo}/>
+                        <Project id={'cards'} style={cards} title={'Learn cards'} description={descriptionCards} imageName={imageName}/>
+                        <Project id={'social'} style={social} title={'Social Network'} description={descriptionSocial} imageName={imageName}/>
+                        <Project id={'todo'} style={todo} title={'Todolist'} description={descriptionTodo} imageName={imageName}/>
                     </div>
                 </div>
             </Fade>
