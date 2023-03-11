@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d605077d.css",
-    "main.js": "/portfolio/static/js/main.7b6635d7.js",
+    "main.css": "/portfolio/static/css/main.2ff4ef11.css",
+    "main.js": "/portfolio/static/js/main.26f1c629.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/main_photo.png": "/portfolio/static/media/main_photo.d510ef1707f2c8b12b8e.png",
     "static/media/skills.png": "/portfolio/static/media/skills.bb56bca4b78df9418c3c.png",
     "static/media/social_media.jpg": "/portfolio/static/media/social_media.30285c64499f2de833a3.jpg",
     "static/media/letter.png": "/portfolio/static/media/letter.ef1baaa346217c5a0f3a.png",
+    "static/media/cards.png": "/portfolio/static/media/cards.76fa08bf969d55ff58ae.png",
     "static/media/todo.jpg": "/portfolio/static/media/todo.44dfeb18eee0e523fc70.jpg",
     "static/media/react.svg": "/portfolio/static/media/react.8d47722d257f315189f992dec92ebabb.svg",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.f1189f4dc2b495543c4e27997f7e80ca.svg",
@@ -16,12 +17,12 @@
     "static/media/js.svg": "/portfolio/static/media/js.cdbcf36a27c4bc40f308240ac9cb5c22.svg",
     "index.html": "/portfolio/index.html",
     "static/media/css.svg": "/portfolio/static/media/css.733a0b9cb3c11e87548a12ff361a65b2.svg",
-    "main.d605077d.css.map": "/portfolio/static/css/main.d605077d.css.map",
-    "main.7b6635d7.js.map": "/portfolio/static/js/main.7b6635d7.js.map",
+    "main.2ff4ef11.css.map": "/portfolio/static/css/main.2ff4ef11.css.map",
+    "main.26f1c629.js.map": "/portfolio/static/js/main.26f1c629.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d605077d.css",
-    "static/js/main.7b6635d7.js"
+    "static/css/main.2ff4ef11.css",
+    "static/js/main.26f1c629.js"
   ]
 }
