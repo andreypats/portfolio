@@ -18,7 +18,6 @@ export const Project = (props: ProjectsType) => {
    return (
         <div className={s.project}>
             <div id={props.id} className={s.image} style={props.style} onClick={e=>onclickHandler(e)}></div>
-            {/*<div className={s.image} style={props.style} onClick={()=>window.location.href='https://cards-nikskozlov.vercel.app/'}></div>*/}
             <h4 className={s.projectTitle}>{props.title}</h4>
             <span className={s.description}>{props.description}</span>
         </div>

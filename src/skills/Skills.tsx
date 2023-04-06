@@ -22,7 +22,7 @@ export const Skills = () => {
                     <Title title={'Skills'}/>
                     <div className={s.skills}>
                         <Skill style={js} progress={'75.0'} title={'JavaScript'} />
-                        <Skill style={ts} progress={'68.0'} title={'TypeScript'} />
+                        <Skill style={ts} progress={'70.0'} title={'TypeScript'} />
                         <Skill style={css} progress={'78.0'} title={'CSS'} />
                         <Skill style={react} progress={'70.0'} title={'React'} />
                     </div>
